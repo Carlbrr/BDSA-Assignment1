@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\caspe\\Downloads\\Assignment1-master\\Assignment1-master\\Assignment1\\Assignment1.csproj",
+      "projectUniqueName": "c:\\Users\\caspe\\Documents\\Skole\\BDSA\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj",
       "projectName": "Assignment1",
-      "projectPath": "c:\\Users\\caspe\\Downloads\\Assignment1-master\\Assignment1-master\\Assignment1\\Assignment1.csproj",
+      "projectPath": "c:\\Users\\caspe\\Documents\\Skole\\BDSA\\BDSA-Assignment1\\Assignment1\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\caspe\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\caspe\\Downloads\\Assignment1-master\\Assignment1-master\\Assignment1\\obj\\",
+      "outputPath": "c:\\Users\\caspe\\Documents\\Skole\\BDSA\\BDSA-Assignment1\\Assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\caspe\\AppData\\Roaming\\NuGet\\NuGet.Config"

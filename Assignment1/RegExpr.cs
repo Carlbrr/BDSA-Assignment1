@@ -8,7 +8,6 @@ namespace Assignment1
     {
         public static IEnumerable<string> SplitLine(IEnumerable<string> lines)
         {
-            List<string> words = new List<string>();
             Regex rx = new Regex(@"\w+", RegexOptions.IgnorePatternWhitespace);
 
             foreach (var i in lines)
@@ -20,9 +19,17 @@ namespace Assignment1
             }
         }
 
-        public static IEnumerable<(int width, int height)> Resolution(string resolutions)
+        public static IEnumerable<(int width, int height)> Resolution(IEnumerable<string> resolutions)
         {
-            throw new NotImplementedException();
+            IEnumerable<string> splitStrings = SplitLine(resolutions);
+
+            Regex rx = new Regex(@"([0-9].*)x([0-9].*)", RegexOptions.IgnorePatternWhitespace);
+            foreach (var i in splitStrings){
+                foreach (Match match in rx.Matches(i)){
+                    yield return (Int32.Parse(match.Groups[1].Value), Int32.Parse(match.Groups[2].Value));
+                }
+            }
+
         }
 
         public static IEnumerable<string> InnerText(string html, string tag)

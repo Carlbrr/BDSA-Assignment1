@@ -33,7 +33,7 @@ namespace Assignment1
 
         }
 
-        public static IEnumerable<string> InnerText(string html, string tag)
+        public static IEnumerable<string> InnerText(string html, string tag) //Only half implemented
         {
             Regex rx = new Regex(@"<" + tag + "[^>]*>(.*?)</" + tag + ">");
             foreach (Match match in rx.Matches(html))
@@ -43,32 +43,4 @@ namespace Assignment1
         }
     }
 }
-
-/*          
-            bool inTag = false;
-            List<string> hk = new List<string>();
-
-            Regex rx = new Regex(@"<" + tag + "[^>]*>(.*?)</" + tag + ">");
-            foreach (Match match in rx.Matches(html))
-            {
-                hk.Add(match.Groups[1].Value);
-            }
-
-            foreach (var match in hk)
-            {
-                StringBuilder sb = new StringBuilder();
-                foreach (var c in match.Split(""))
-                {
-                    if(c == "<") inTag = true;
-                    if(c == ">") inTag = false;
-
-                    if(false){
-                        sb.Append(c);
-                    }
-                }
-                yield return sb.ToString;
-            }
-*/
-
-// regex som finder tags og defter kan man sortere efter de forskellige tag
 
